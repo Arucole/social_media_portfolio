@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="/src/sytles/services.css" />
+    <link rel="stylesheet" href="/src/sytles/styles.css" />
+    <!--icons link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="/src/js/controller.js"></script>
+    <title>Social Media Portfolio | Aru Collins A</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header section -->
+      <header>
+        <h3>
+          <a href="#" class="logo"><span>Aru</span>Collins</a>
+        </h3>
+
+        <ul class="navlist">
+          <li><a class="item" href="index.html">Home</a></li>
+          <li>
+            <a class="item list" href="">Portfolio</a>
+            <ul class="dropdown">
+              <li><a href="abujawomen.html">@womeninabuja</a></li>
+              <li><a href="herconnecthub.html">@herconnecthub</a></li>
+              <li><a href="raregemstore.html">@raregemstore</a></li>
+              <li><a href="tcsbusinesshub.html">@tcsbusinesshub</a></li>
+            </ul>
+          </li>
+          <li><a class="item" href="services.html">Services</a></li>
+          <li><a class="item" href="cv.html">CV</a></li>
+          <li><a class="item" href="contact.html">Contact</a></li>
+          <li><a class="item" href="testimonial.html">Testimonials</a></li>
+        </ul>
+        <div class="hambuger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </header>
+      <!--  -->
+      <div class="serviceContainer">
+        <div class="serviceHead">
+          <h1>Services</h1>
+        </div>
+        <!--  -->
+        <div class="serviceList">
+          <div class="service-box">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAZJJREFUaEPtmb9OwzAQxr9z/QIIgdoqpnKlLrB05EHYGBhA6lMwIN4CVYiBkceAmQVYKtVqQkEIlRfoH1dBDFBQE2PTEOmy+u7yfb6f7SgmlPyhkusHGyi6g7/qgDGmKq3tgmgXwHpgEyMCbiqTyVGt1XrNqu1s4F08cAugmlXcczyBlG2l1NuyOs4Gkn7/EkT7nuLypp8prTthDRjzBKCWV4FnXKK03gptwHqKckpXWi+lxB0hY9iASwu4A4uzlTBCLgABjBAj5EbMt2hGiBFihPhb6CsDfBI7rgneRnkbdURmMZwRYoQYIT6J+ST2WgXFb6NEVxVrj1MXU6JTWLvn4qhwAzMhdhqNxkMqejAYbIvZ7J4NfJqBv/83+oHQWAghrD0pHUIuuPwUW/ga+I8GhgDqvsJy5g+V1lHQC47YmAsCDnIK8A07V1ofBjXw3OttTKS8A7Dpq25pPtEjSdmOomgU1EBaLI7jOk2nXQDpNetaYCOp4OuxtZ1ms/mSVdt5G80quOpxNrDqGV98X+k7MAcQU9gxFR+3mgAAAABJRU5ErkJggg=="
+            />
+            <h3>Account Management</h3>
+            <p>
+              Enhance your digital footprint with a top-notch Social Media
+              Account Management services. Whether you're a business aiming to
+              expand your reach or an individual looking to curate a captvating
+              online persona, I've got you covered. From content creating to
+              scheduling, we handle it all so you focus on what matters most.
+              Experience the difference of a well-curated social media presence
+              - let's connect and ampilfy your impact together.
+            </p>
+          </div>
+          <!--  -->
+          <div class="service-box">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAABilJREFUaEPtWGtsFFUU/s7Mtgg+UKuxtDu7c2e7IQZUFDQRURPDD+MTFTUaHhHBKBBjNGKCqDFiiKjxhwkQFY0oGoiPND7++E/UiOIDCRhsd+7tzrYWER9VC+3OzjHTsJu7ZVt2+iIo99/ce8757nfOueeeO4TjfNBxvn+cIHCsI3giAv+7CHie10i+f1tciBdGgvyYp1BOymYGbiBgy0HfX5hOp3uGQ2RYBDoymUTBMO4AcA2ACw5v5Dswf0yFwtvxdDqnb85T6hYwv6PNNVtCzBlzAi0tLaeNj8XeCD05CDgTsNUYN25RQ0NDNzNTTikPQKOuw8DShBDrh0oicgQ6OjomFHp7t4N5apWg2/cdOHD5jBkz8u2ZzOzAMN4DcKqm22MyT25wnLYq7ZWJRSbgKbUJzPOjgDHwQkKIB0OdnFKXchB8CqJYyQbzRstxFkexWZSNRMDLZM6DYfygAxGwD0R3Gz0928N5v6ZmJhnGRjCfpcn1IhZzLMtqD+eySj1KzKu19UKeudFxnH1RSUQjoNSLYF6usd+XB6YJITp14FxLS5xjsZDoGZrsyrgQa8JvKeVJMUACqC/pEc21bPvd0SUgZSuAlAY6z7LtzZVAPdddAqKXtLVtlhBXFL89pdaC+WFtfa0lxCOjTaAbwPgiSIGowbbtnyuBtre2WoFpZrW13ywh6jQCN4NZ9/h7lhC3jDaBLr2CsGk2JhKJjkqgh9MoLJvF0WUJMbH4kVVqETFv1A7yZstx5o02gZ0Azi/lNfPCuONsqphCSt0N5leKawx8mxBieikCUj4O4EntjKyPC7F0tAk8A2CFBrK/plCYWt/U9EuFQ/w9gFLKENHquG0/pqXQy2DWS+fon4F2150cEP0IlD2EOkC0BKb5pdndbfi1tbMMYAMD52jp4ZtAU/Gy6ti796xCbe1PepUC0bWWbX88qhEIjeekfJWBuyIBEb1o2fb9Wv5/QsyzNRtu3LabiIgj2e3nyap0Ozs7T+49ePBrAs6tSgHYfsj3ryx2nVmlHiLm53RdJlqWsO11VdorE4t0kRU1M5nMxFqizWHYBwENm7ktsfHjF9fX1//TFz3Xnc9Er1dw3PcIggVWKrUrKokhESiCSCntGqI7mfnqw+10HsBOAj4MTHOLXmJzrjuXibYOEvWAmNc0CvEEERWqJTIsAtWChHI/t7Sc7ZvmTSAK+/+rAIwbQP+LmO/PmZRO76/G/pgR0DfT1tZ2hhkE9zIQ9lUNFTa6xwemCyEOHY1EJAKe552JfH4uiG4E0ASiBjCfUhGE6G8whyX2JwRBc2Ca7yaTyd912R07dtTU19UtZyC8X2rKTye9bNn2PSNCoO/paJqrwLwQQO3RjA6w3tPXOhQKa/o/NbOtrVMpFnsfzE1l1QmYkxCieTC8o0Yg57q3MtGbw9h4f/xuCoLb46nUh/rC4d7pKwCTtPn9vUGQTqVSfw5EYlACnpRh2xCGd8QHAffFhdigG25X6sKA+ZuySsW8wnKcZyMTyEp5BwFvVVDMgmgLmD/ygZ1CiD8qGZdSnh4DphHz9WwYt4E53k+OQXRd//YhK+XrBCzQZKUlhBOJQFtbm2MEwZ5+pe4vZp5nCfFB1CufmQ1PqVsJeE1/TwDoqikU0noz6GUyaRhG2CeVBgEXxoUIm8MjRsUU8lz3HRDpj4uDgWFcnEwmdw8nlzzXvQTA5/qDnpjXxR1nWdl5UGobM88qzQ2SRkcQUEqdazKH3tdcQAM+HaMSykn5QPiXQtucb+bzkxomT/61OJdV6kFifr74zcDWhBC3VxWBrOuuIqKnNOE9cdueGjVtBiK2e/fu2tMmTFB6tWFgUUKIML36RrtSMwPmzzUbuywhSg+pfulVDpV13c+I6LIS+2F0igORyLru00S0ciAP53K5Os7nSxEB8LslxJlVRcCTMvROsigcGEYqmUy6UVNlMPm2TGaWYRjbNJnvLCEuGgrGEWfAkzJsfScUjXV1d4+bMmVK71CMD6TT15L4/gFt/Q9LiNI/pChYlQiUvYosIY56W0cBLMp6Uo4Izn+PwFC8eSx1RiU9xpLQCQJj6e2q7oFjvaGo+CdSKKrHRlr+uI/Av8KUaE/59srBAAAAAElFTkSuQmCC"
+            />
+            <h3>Account Growth</h3>
+            <p>
+              Experience rapid social media account growth like never before!
+              Our advanced strategies are tailored to attract and engage your
+              targets audience, leading to impressive follower increases. From
+              optimized content scheduling to strategic interactions, we'll
+              drive organic growth that gets you noticed. Unleash your social
+              media potential and elevate your digital presence with me today.
+            </p>
+          </div>
+          <div class="service-box">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAA8JJREFUaEPtmF2IVVUUx/9rGN8SCiLKufvcs/ZEI5m+aPjiQ1Lhw6D4YmBBhC+SIRkIhiLOQyQofhRZhFD4pg+SWlRYGBEliIKYWiKdve+cm9NgIgW+jNe75Ohol3vP591nujMw5/Hu//qv9dtfd+9NmOEfzfD6MQvQ6xHsagRGjVkBYAUBSwmYJ8ATkyDjInINRGdE5Juq1t9NNWAhgNDaVyGyD/8VnFXfGIg2Kt8/miXstj0XgLX2qX6RQwK83E0iAb7sn5hYN29o6O9u4tNiMgFGjVlNwGcAHnNJTsA4iNZWfP8HF5/22FSAP4NgZZPoRIkJm0T0UpkQiQDXgqB6p6/vIkQeKREgsrpxW2SB1nq8DN9EgNCYMwCeLyNJjMdJxRztZM5fLMCoMW8Q8Lmze+rqo2Hl+1+75ogFCI0ZA/Ckq3lG/CXF/Jxrjg6AurXLReSUq3Ge+D6R+QNaX8mjTdJ0AIwas5eAd1xM88YK0WbP9/fk1cfpOgCmePG213BcMa8uG6AGwHMxLRD7q2JeVEDfIY0bgQkAc1xMC8T+o5gfLaDPBfAvgLkupgVibylmpz/KuBH4HcBQgSJcpH8o5qddDDoBguB7EL3oYpo3VkR+9rRellefdxfaAWDExbRA7AeKeVMBffYaqNVqi/uazbMupgViX1DMPxbQZwNEitAYC6DqYpwj9rJiXpBDlyqJPQvVg+AVITriap4WL8Baj/mwa47E43Td2p9ExGmBpRR3SjGXslEk3wfCcACNxkUATn80MRA3G8CzzPyXa+9H8alXyrq1wyLyVRmJWjyi0+cmxfxtGb7Zl/ogWEVEh0oYiZsArgN45l7hIudIZKQyOOjUQZkAUS7XZxUAp9Hfv0YajSUEHGvr+fMCjHjMx7sZkVwAD4xDa18DsB8ij+dM9guI9rY+bIXGXACwsD0+usJWmNfl9H0oKwTwICp6WiSiYYgsbnlaFBCNodmsgegkms0v1ODg1faC0rZoAXZ6zFuLQHQFUCRBnDY05jcA82N9RDYqrT/Km6MnAPUgeF3ubwwJDLLd0/q9PBA9AYgKy7p7k8ieitabsyB6BjAJsY+AxNOoAPs95tQHhp4CRBChMTsBvJvS0x8q5reT2nsOcA/C2t0QSZ4uRAcr1ep6IpKY7Tdrlv0/7XVjPhbgzbhsBHwy4PtvTWuAqPA4CBF539N627SeQq3F1YPggBBtmPxti2LelTYHpsUaaC8wtPYgiZytMH+aNYGnJUBW0a3tswBFemsqtLMjMBW9WsRzxo/AXaVoNEDQelGxAAAAAElFTkSuQmCC"
+            />
+            <h3>SEO Marketing</h3>
+            <p>
+              Unleash the power of search engine optimization to boost your
+              online presence. Our dedication team specializes in crafting
+              tailored strategies that drive organic traffic, enhance search
+              rankings, and ensure your brand shines where it matters most. From
+              keyword optimization to technical enhancements, we've got the
+              tools to propels you to the top of search results. Don't let your
+              website get lost in the digital crowd - let us optimize your path
+              to success. Ready to elevate your visibility? Let's connect and
+              conquer the digital landscape together!
+            </p>
+          </div>
+          <div class="service-box">
+            <img
+              src="data:image/png;base64,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"
+            />
+            <h3>Community Management</h3>
+            <p>
+              Nurturing, engaging, and expanding a community of like-minded
+              individuals. Facilitate discussions, curate and create content,
+              enforce community guidelines, and organize events while
+              maintaining a safe and respectful environment. Collect feedback,
+              analyze data, and advocate for the community's interests, serving
+              as a bridge between members and the organization. It extends to
+              social media management, outreach, and knowledge sharing, making
+              it essential in building and sustaining thriving online and
+              offline communities through their multi-faceted skills and
+              commitment to fostering connections and positive experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- footer section -->
+      <footer class="end-section">
+        <h3>Aru Collins</h3>
+        <p>
+          For easy contact and communications with me - please click on the link
+          below.
+        </p>
+        <div class="end-icons">
+          <a
+            href="http://www.linkedin.com/in/aru-collins-207089226"
+            target="_blank"
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAtRJREFUaEPtmctrE1EUxr8zLaZEcNNdSAIzEZQGNy4UF1IVq9CV74Iu+g8oLly40IUvKBQX4l8gogutj40uFAvq1o1QLIoy98aJRQQ3gtW0zXyS2pTMMEnTMjNJYO7yMtzz/c537mPuFfR4kx7XjwSg0w4mDnStA2XbPkGRGwC2dVjkJyEvZy3rUZCOpiXkKPUBwFCHxdfDz+ZMs7heAHaJ+GUZOdMMTHYrBxKAMB0My4ESgYv9CwvT1XTa5dLSiACTAPJhig0aKyyAfTnTfNMYoKz1AZLTvQBQyZnmgF8oyb6y1r8BpKKECMOBZgBGWes/ADZ1OwBIDuct622vlhAg8gXV6miuUPhcgyiVSkOG6z4DYEaZ/Sj2gZkVwTuiFl4fP4w5EJfWwDjhAIhMgZxtjCDAdgJj9T4RuU7S9ak4C2AQwGuITMri4gwHBn6yUilIf/9ukGcA7G+VoVAAhDzpPxU6Wh8F+aSV1Y5S7wlM5E3zQTORZa33kHwFIB3ZRhYE8FWpIwI8XQNg2L8BBol0bPscRG7HCuBofQzk47UmWzsTaG5uLl2tVH4A2Oz/vqMlVBfzTeudLrmlD/ieMc2PgS4o9QLAodgA2imhmhhHqfsATq9OdnI8a1l3/ULLtn2TIhe6CsDRehTkc5+ov32p1GAmk5lv7HeUOg/gVmwA7axCzbJK192VLxTeeY4mSo0TuNNVAP7yqYsjeThvWS89AP8vE6a6C8C270Gktll5WtCyvHIbEhnAqaxleQZ3tD4OcvXK49f8fKpYLC546ro5wFjWsh7G6UAC0JhtIRMH1nUvJGRSQkkJ+ZfiZqdER6mgq8UrADz3QiT3isi1+jiG6464hrHUOC5FLgl5MCDW1eWfHG8bBlCL42mhnEabwcbRnwDEkeVWMTbiQG8/cCwfqgxjAuTWDmd/Y09MHRbddvjkmbXtVEX0YeJARIlte9ied+Af7NFdT7HodSsAAAAASUVORK5CYII="
+          /></a>
+        </div>
+      </footer>
+
+      <a href="#" class="scroll-bttn"
+        ><img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAkpJREFUaEPtlLtuFDEYhc8/4fISs8OMUyDxEKFCQoq4BAiJICCEoKVLkx7RUNBSgBA3AYm4CgkpVXgHGgrbu7MvAWT9R17NwOxwUcb2Cq1kV3vxf3y+czxDmPFFM+4fEeB/NxgbiA14JhCvkGeA3uOxAe8IPQViA54Beo/HBrwj9BSYagOlUietv15RfPL0+dfxqQH0pTyREH20JxvmxSNCbE8DYioAQ60XmfkNgIOV6R9EtJTm+Rgo5AoOMDZvzFsQHZgwyrxLSXI2NERQgFLrJRjz6jfzNQnzLpLkYi/PbTtBVjCAgVIrBDwHkDScfas+H278Zoh5NRViMwRBEICBUqsEPAUw1zD1HcCZ6vs7AIca/41AtByiCW+AyrxN/peWvSpEp+rX5/h1yvyhdbVGDKxlRfHCpwkvgKGUV5noUds8A+czId43jQ2kPE1Er1stMQOXfCCcAf5oHhgx87m2+RpkKOUFJrKJN68aE/O1VIjHLk04AZRS3gTR/YnkAftwrqRCbP3LSAXxsvWwO0N0Buj3+8cSY760TDKIrvTy/Nl+UiylXAORTXzifDLmaDo//3U/GvWezgB2cKj1BjPfrkQ6ma8PLrW+DOYnNQQzr2dC3O1i3u51ArCDpVL3ANxiohtZnj/serDdP9D6OjE/YOBOVhQbLhrOAGMDUi5kQnx2OfhnE0od7xXFjquGF4DroSHnIkDINF20YgMuqYWciQ2ETNNFKzbgklrImdhAyDRdtGIDLqmFnIkNhEzTRSs24JJayJmZb2APR6u5MVUAXzIAAAAASUVORK5CYII="
+      /></a>
+    </div>
+  </body>
+</html>

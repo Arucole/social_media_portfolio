@@ -1,0 +1,620 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  border: none;
+  outline: none;
+}
+
+:root {
+  --bg-color: #191919;
+  --secont-bg-color: #101010;
+  --main-color: #e9204f;
+  --hov-color: #f87e5fb9;
+  --text-color: #fff;
+  --second-color: #e4e4e4;
+  --other-color: #c6c9d8bf;
+  --h1-font: 7rem;
+  --h2-font: 3.5rem;
+  --p-font: 1.1rem;
+}
+
+body {
+  background: var(--secont-bg-color);
+}
+
+body .container {
+  color: var(--text-color);
+  background: var(--secont-bg-color);
+}
+
+body header {
+  background: var(--secont-bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 1000;
+  right: 0;
+  top: 0;
+  position: fixed;
+  padding: 28px 11%;
+  border-bottom: 1px solid var(--secont-bg-color);
+  transition: all ease 0.5s;
+  position: relative;
+}
+
+body header h3 a {
+  font-family: "Dancing Script", cursive;
+  color: var(--text-color);
+  font-size: 3rem;
+}
+
+body header h3 a span {
+  font-family: "Dancing Script", cursive;
+  color: var(--hov-color);
+}
+
+body header .navlist {
+  display: flex;
+}
+
+body header .item {
+  color: var(--second-color);
+  font-size: var(--p-font);
+  font-weight: 600;
+  margin: 0 30px;
+  transition: all ease 0.4s;
+}
+
+body header .item:hover {
+  color: var(--hov-color);
+}
+
+body header header.sticky {
+  padding: 15px 11%;
+  background: #000;
+  border-bottom: 1px solid #4e5055;
+}
+
+body header .dropdown li {
+  display: block;
+  margin: 5px 0;
+}
+
+body header .dropdown li a {
+  color: var(--text-color);
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+body header .dropdown {
+  width: 13rem;
+  height: 8rem;
+  top: 5rem;
+  background: var(--secont-bg-color);
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+body header .dropdown a:hover {
+  color: var(--hov-color);
+}
+
+body header .navlist li:hover ul.dropdown {
+  display: block;
+}
+
+body .hambuger-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+body .hambuger-menu:hover {
+  cursor: pointer;
+}
+
+body .bar {
+  display: none;
+  height: 4px;
+  width: 35px;
+  background: var(--text-color);
+  color: var(--text-color);
+  margin: 3px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+body .home {
+  padding: 120px 19% 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+body .hero-img {
+  max-height: 40rem;
+  max-width: 40rem;
+}
+
+body .hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body .hero-text h4 {
+  color: var(--second-color);
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  word-spacing: 10px;
+}
+
+body .hero-text h1 {
+  font-family: "Dosis", sans-serif;
+  font-size: var(--h1-font);
+  color: var(--text-color);
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+body .hero-text h5 {
+  color: var(--second-color);
+  font-size: 25px;
+  font-weight: 600;
+  word-spacing: 5px;
+  margin-bottom: 3.5rem;
+}
+
+body .btn {
+  display: inline-block;
+  padding: 16px 45px;
+  background: var(--hov-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 600;
+  width: 10rem;
+  border: none;
+  border-radius: 5px;
+  transition: all ease 0.5s;
+}
+
+body .btn:hover {
+  cursor: pointer;
+  color: var(--hov-color);
+  background: var(--other-color);
+  transform: translateX(5px);
+}
+
+body .about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: var(--bg-color);
+  align-items: center;
+  gap: 4rem;
+}
+
+body .about-img img {
+  width: 100%;
+  height: auto;
+}
+
+body .about-text h2 {
+  font-family: "Dosis", sans-serif;
+  font-size: var(--h2-font);
+  font-weight: 800;
+  margin-bottom: 10px;
+  max-width: 40rem;
+}
+
+body .about-text h5 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  max-width: 40rem;
+}
+
+body span {
+  color: var(--hov-color);
+}
+
+body .about-text p {
+  color: var(--other-color);
+  font-size: var(--p-font);
+  margin-bottom: 3rem;
+  line-height: 25px;
+  max-width: 40rem;
+}
+
+body .service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: var(--secont-bg-color);
+}
+
+body .text-center {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+body .text-center h2 {
+  font-family: "Dosis", sans-serif;
+  font-size: var(--h2-font);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+body .text-center h4 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+body .service-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+body .service-box {
+  padding: 45px 30px;
+  background: var(--bg-color);
+  border-radius: 0.8rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  height: 32rem;
+  max-height: 34rem;
+  max-width: 27rem;
+  transition: all ease 0.5s;
+}
+
+body .service-box img {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+body .service h3 {
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--hov-color);
+}
+
+body .service p {
+  color: var(--other-color);
+  font-size: var(--p-font);
+  line-height: 20px;
+  margin-bottom: 1rem;
+}
+
+body .s-btnn {
+  display: inline-block;
+  padding: 9px 24px;
+  background: var(--hov-color);
+  color: var(--text-color);
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid var(--hov-color);
+  border-radius: 2rem;
+  transition: all ease 0.5s;
+}
+
+body .s-btnn:hover {
+  cursor: pointer;
+  color: var(--hov-color);
+  background: var(--other-color);
+  transform: scale(1.1);
+}
+
+body .service-box:hover {
+  transform: translateY(-8px);
+  border: 1px solid var(--bg-color);
+}
+
+body .collabo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body .collabHead {
+  margin: 5rem 0;
+}
+
+body .collabHead h5 {
+  font-size: 3rem;
+}
+
+body .collabDis {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #121111;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+body .collabDis img {
+  width: 13rem;
+  height: 11rem;
+}
+
+body .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin: 3rem 0;
+}
+
+body .left-content {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 4rem;
+}
+
+body .in img {
+  color: var(--hov-color);
+  opacity: 0.5;
+  font-size: 120px;
+  margin-bottom: 15px;
+  transition: all ease 0.4s;
+}
+
+body .in img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+body .in h4 {
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+body .right-contact h2 {
+  font-family: "Dosis", sans-serif;
+  font-size: var(--h2-font);
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+body .right-contact a {
+  display: inline-block;
+  color: var(--hov-color);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  border-bottom: 2px solid var(--hov-color);
+  padding: 3px 0;
+  transition: all ease 0.4s;
+}
+
+body .right-contact a:hover {
+  transform: translateY(-5px);
+  color: var(--text-color);
+  border-bottom: 2px solid var(--text-color);
+}
+
+body .right-contact p {
+  color: var(--other-color);
+  font-size: var(--p-font);
+  line-height: 30px;
+  max-width: 40rem;
+}
+
+body .end-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+body .end-section h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+body .end-section p {
+  color: var(--other-color);
+  font-size: var(--p-font);
+  line-height: 30px;
+  margin-bottom: 20px;
+  max-width: 25rem;
+}
+
+body .end-section img {
+  height: 50px;
+  width: 50px;
+  background: var(--hov-color);
+  color: var(--text-color);
+  border: 2px solid var(--hov-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 50%;
+  margin: 0 9px;
+  transition: all ease 0.5s;
+}
+
+body .end-section img:hover {
+  transform: translateY(-5px);
+  background: transparent;
+  border: 1px solid var(--hov-color);
+}
+
+body .scroll-bttn img {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  color: var(--text-color);
+  background: var(--hov-color);
+  font-size: 23px;
+  padding: 9px;
+  border-radius: 0.8rem;
+}
+
+@media (max-width: 1600px) {
+  body header {
+    padding: 14px 4%;
+  }
+  body header.sticky {
+    padding: 8px 4%;
+  }
+  body section {
+    padding: 100px 5% 80px;
+  }
+}
+
+@media (max-width: 1200px) {
+  body .home {
+    flex-direction: column;
+    min-height: 90vh;
+  }
+  body .item {
+    margin: 0 20px;
+  }
+  body :root {
+    --h1-font: 7rem;
+    --h2-font: 3.5rem;
+    --p-font: 1rem;
+  }
+}
+
+@media (max-width: 1060px) {
+  body .about {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  body .about-img img {
+    width: 100%;
+    height: auto;
+  }
+  body .contact {
+    flex-direction: column;
+  }
+  body .left-contact {
+    margin: auto;
+  }
+}
+
+@media (max-width: 1067px) {
+  body .hambuger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  body .hambuger-menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  body .hambuger-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  body .bar {
+    display: block;
+  }
+  body .navlist {
+    position: absolute;
+    right: 100%;
+    top: 70px;
+    gap: 10px;
+    padding: 20px 0;
+    flex-direction: column;
+    font-size: 15px;
+    background-color: var(--secont-bg-color);
+    width: 100%;
+    text-align: left;
+    transition: all 0.5s ease;
+    z-index: 99;
+    overflow: hidden;
+  }
+  body .item {
+    display: block;
+    font-size: 22px;
+    padding: 12px 0;
+  }
+  body .navlist.active {
+    right: 0;
+  }
+  body .navlist .open {
+    top: 100%;
+  }
+  body .dropdown {
+    width: 13rem;
+    height: 8rem;
+    background: transparent;
+    position: absolute;
+    top: 5rem;
+    left: 6rem;
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  body .home {
+    min-height: 80vh;
+  }
+  body :root {
+    --h1-font: 3.8rem;
+    --h2-font: 2.7rem;
+    --p-font: 15px;
+  }
+  body .hero-text h4 {
+    font-size: 18px;
+    word-spacing: 10px;
+    margin-bottom: 30px;
+  }
+  body .btn {
+    padding: 10px 35px;
+  }
+  body .left-contact {
+    gap: 3rem;
+  }
+  body .in img {
+    font-size: 80px;
+  }
+  body .in h4 {
+    font-size: 20px;
+  }
+  body .end-section p {
+    font-size: 14px;
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body .hero-text h1 {
+    font-size: 3.5rem;
+  }
+  body .hero-text h4 {
+    font-size: 16px;
+    word-spacing: 7px;
+  }
+  body .service-box p {
+    font-size: 14px;
+  }
+  body .collabHead h5 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.abuja {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.abjHead {
+  background-color: rgba(248, 126, 95, 0.7254901961);
+  height: 5rem;
+  width: 60%;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+.abjOverview,
+.abjRole {
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(198, 201, 216, 0.7490196078);
+  height: 15rem;
+  width: 50%;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  color: #101010;
+}
+
+.abjOverview h3 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #621e01;
+}
+
+.abjOverview p,
+.abjRole p {
+  font-family: "Roboto", sans-serif;
+  line-height: 25px;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.abjOverview p span {
+  color: #621e01;
+}
+
+.abjRole h4,
+.abjRole h5 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #621e01;
+}
+
+.abjBg {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head {
+  background-color: rgba(248, 126, 95, 0.7254901961);
+  height: 5rem;
+  width: 60%;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+.abjBg {
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(198, 201, 216, 0.7490196078);
+  height: 40rem;
+  width: 50%;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  color: #101010;
+}
+
+/*     */
+.abjBg p span {
+  color: #621e01;
+}
+
+.abjBg p {
+  font-family: "Roboto", sans-serif;
+  line-height: 25px;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.abjBg li span {
+  color: #621e01;
+}
+
+.abjProblems {
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(198, 201, 216, 0.7490196078);
+  height: 24rem;
+  width: 50%;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  color: #101010;
+}
+
+.abjProblems p {
+  font-family: "Roboto", sans-serif;
+  line-height: 25px;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.abjProblems ul li,
+.abjBg ul li,
+.abjStrategy ul li,
+.abjInsight ul li {
+  font-family: "Roboto", sans-serif;
+  line-height: 25px;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 10px 0;
+  list-style: inside;
+}
+
+.abjStrategy {
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(198, 201, 216, 0.7490196078);
+  height: 35rem;
+  width: 50%;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  color: #101010;
+}
+
+.abjStrategy p {
+  font-family: "Roboto", sans-serif;
+  line-height: 25px;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.abjInsight {
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(198, 201, 216, 0.7490196078);
+  height: 18rem;
+  width: 50%;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  color: #101010;
+}
+
+.abjSample {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.abjSample img {
+  width: 100%;
+  height: 25rem;
+}
+
+@media (max-width: 1425px) {
+  .abjBg {
+    height: 50rem;
+    width: 60%;
+    margin: 1rem 0;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 1067px) {
+  .abjHead {
+    width: 90%;
+    margin: 1rem 0;
+  }
+  .abuja {
+    margin: 0 1rem;
+  }
+  .abjOverview,
+  .abjRole {
+    height: 20rem;
+    width: 60%;
+    margin: 2rem 0;
+    padding: 1rem;
+  }
+  .head {
+    width: 90%;
+    margin: 1rem 0;
+  }
+  .abjBg p {
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .abjProblems {
+    height: 30rem;
+    width: 60%;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  .abjBg {
+    height: 54rem;
+    width: 60%;
+  }
+  .abjStrategy {
+    height: 45rem;
+    width: 60%;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  .abjStrategy p {
+    line-height: 15px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .abjInsight {
+    height: 18rem;
+    width: 60%;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .abjOverview,
+  .abjRole {
+    height: 20rem;
+    width: 80%;
+    margin: 2rem 0;
+    padding: 1rem;
+  }
+  .abjOverview p,
+  .abjRole p {
+    line-height: 25px;
+    font-size: 15px;
+  }
+  .abjBg {
+    height: 50rem;
+    width: 70%;
+    margin: 1rem 0;
+    padding: 1.5rem;
+  }
+  .abjBg p {
+    line-height: 20px;
+    font-size: 12px;
+  }
+  .abjProblems ul li,
+  .abjBg ul li,
+  .abjStrategy ul li,
+  .abjInsight ul li {
+    line-height: 20px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  .abjBg {
+    height: 55rem;
+    width: 80%;
+    margin: 1rem 0;
+    padding: 1.5rem;
+  }
+  .abjBg p {
+    line-height: 19px;
+    font-size: 12px;
+  }
+  .abjProblems ul li,
+  .abjBg ul li,
+  .abjStrategy ul li,
+  .abjInsight ul li {
+    line-height: 19px;
+    font-size: 12px;
+  }
+  .abjProblems {
+    height: 25rem;
+    width: 80%;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  .abjProblems p {
+    line-height: 25px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .abjStrategy {
+    height: 40rem;
+    width: 80%;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  .abjSample {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .abjOverview,
+  .abjRole {
+    height: 28rem;
+  }
+  .abjOverview p,
+  .abjRole p {
+    line-height: 20px;
+    font-size: 15px;
+  }
+  .abjBg {
+    height: 85rem;
+    width: 80%;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  .abjBg p {
+    line-height: 19px;
+    font-size: 12px;
+  }
+  .abjProblems ul li,
+  .abjBg ul li,
+  .abjStrategy ul li,
+  .abjInsight ul li {
+    line-height: 19px;
+    font-size: 12px;
+  }
+  .abjProblems {
+    height: 35rem;
+    width: 80%;
+  }
+  .abjStrategy {
+    height: 55rem;
+    width: 80%;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  .abjSample img {
+    width: 80%;
+    height: 20rem;
+  }
+  .abjInsight {
+    height: 18rem;
+    width: 80%;
+  }
+}

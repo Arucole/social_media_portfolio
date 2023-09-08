@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.test-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 7rem 0 1rem 1rem;
+  padding: 2rem;
+}
+
+.test-head {
+  height: 5rem;
+  width: 60%;
+  background-color: rgba(248, 126, 95, 0.7254901961);
+  padding: 10px 20px;
+  margin: 30px 0;
+}
+
+.test-one,
+.test-two {
+  max-width: 40%;
+  height: 17rem;
+  background-color: #dfdddd;
+  border: none;
+  border-radius: 5px;
+  padding: 2rem;
+  color: #333;
+  margin: 2rem 0;
+}
+
+.test-one p,
+.test-two p {
+  font-family: "Tulpen One", cursive;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1490px) {
+  .test-container {
+    margin: 7rem 0 0 0;
+    padding: 0.5rem;
+  }
+  .test-one,
+  .test-two {
+    max-width: 50%;
+    height: 18rem;
+  }
+  .test-one p,
+  .test-two p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1004px) {
+  .test-one,
+  .test-two {
+    max-width: 50%;
+    height: 22rem;
+  }
+  .test-one p,
+  .test-two p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 628px) {
+  .test-one,
+  .test-two {
+    max-width: 70%;
+    height: 29rem;
+  }
+  .test-one p,
+  .test-two p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 406px) {
+  .test-head h1 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 368px) {
+  .test-one,
+  .test-two {
+    max-width: 90%;
+    height: 28rem;
+  }
+  .test-one p,
+  .test-two p {
+    font-size: 13px;
+  }
+}
